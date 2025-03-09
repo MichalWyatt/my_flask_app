@@ -1,0 +1,124 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background: #002f75;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Headings styling */
+h1, h2, h3 {
+    margin: 20px 0;
+}
+
+/* Paragraph styling */
+p {
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Navigation list styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: square;
+    margin: 20px 0;
+    padding-left: 20px;
+    justify-content: space-around;
+}
+
+/* Anchor link styling */
+a {
+    color: #ff0000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Anchor link hover effect */
+a:hover {
+    text-decoration: underline;
+    color: lightcoral;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #002f75;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #002f75;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #002f75;
+    color: #ffffff;
+}
+
+/* Image styling */
+img {
+    margin: 10px;
+    border: 2px solid #002f75;
+}
+
+/* Form styling */
+form {
+    margin: 20px;
+}
+label {
+    display: inline-block;
+    width: 100px;
+}
+input[type="email"], input[type="password"] {
+    padding: 5px;
+    margin: 5px 0;
+}
+button {
+    background-color: #002f75;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Show Password checkbox styling */
+#showPassword {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+#showPassword + label {
+    width: auto;
+    font-size: 14px;
+    color: #002f75;
+}

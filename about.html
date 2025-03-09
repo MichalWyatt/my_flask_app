@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>JCS Pave commits to excellent work. We provide superior customer relations while giving back to the community.</p>
+        </section>
+        <section>
+            <h2>Our Team</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Contact</th>
+                </tr>
+                <tr>
+                    <td>Donald Duck</td>
+                    <td>CEO</td>
+                    <td>donald@jcspave.com</td>
+                </tr>
+                <tr>
+                    <td>Mickey Mouse</td>
+                    <td>Secretary</td>
+                    <td>mickey@jcspave.com</td>
+                </tr>
+                <tr>
+                    <td>Goofy</td>
+                    <td>Manager</td>
+                    <td>goofy@jcspave.com</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Our Work</h2>
+            <img src="{{ url_for('static', filename='paving1.jpeg') }}" alt="Paving Project 1" width="200">
+            <img src="{{ url_for('static', filename='paving2.jpeg') }}" alt="Paving Project 2" width="200">
+            <img src="{{ url_for('static', filename='paving3.jpg') }}" alt="Paving Project 3" width="200">
+            <img src="{{ url_for('static', filename='paving4.jpeg') }}" alt="Paving Project 4" width="200">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Flask App</p>
+    </footer>
+</body>
+</html>

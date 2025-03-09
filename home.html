@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Home - Flask App</title>
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header>
+        <h1>Sample Flask App About a Paving Company</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            <li><a href="{{ url_for('update_password') }}">Change Password</a></li> 
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <section>
+            <h2>About This Application</h2>
+            <p>This is a simple Flask web application that demonstrates routing and rendering HTML templates.</p>
+
+            <!-- Display current date and time -->
+            <h3>Current Date and Time</h3>
+            <p>{{ current_time }}</p>
+
+            <!-- List of features -->
+            <h3>Features</h3>
+            <ul>
+                <li>Multiple routes</li>
+                <li>Dynamic content rendering</li>
+                <li>Responsive design</li>
+            </ul>
+
+            <!-- Useful links section -->
+            <h3>Useful Links</h3>
+            <p>Our Work:</p>
+            <ul>
+                <li><a href="https://www.jcspave.com/our-work.html">Work Images</a></li>
+                <li><a href="https://www.jcspave.com/asphalt-paving.html">Asphalt Paving</a></li>
+                <li><a href="https://www.jcspave.com/asphalt-repair--maintenance.html">Asphalt Repair & Maintenance</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Flask App</p>
+    </footer>
+</body>
+</html>

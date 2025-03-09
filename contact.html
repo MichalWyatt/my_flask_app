@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- Header section with navigation -->
+    <header>
+        <h1>Headquartered in Louisiana and Beyond</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <p>Request A Free Estimate</p>
+        <h2>Contact Us Here</h2>
+        <ul>
+            <li>Email: <a href="mailto:jcspave@example.com">jcspave@example.com</a></li>
+            <li>Phone: <a href="tel:+1234567890"> (318) 567-8910</a></li>
+        </ul>
+
+        <!-- Social media links -->
+        <h2>Follow Us</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/jcspave" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/jcspavetheway/" target="_blank">Instagram</a></li>
+        </ul>
+
+        <!-- Display current date and time -->
+        <p>Current Date and Time: {{ current_time }}</p>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Flask App</p>
+    </footer>
+</body>
+</html>
